@@ -28,9 +28,11 @@ try {
          echo sprintf(
              "id: %d, first_name: %s, middle_name: %s, last_name: %s",
              $item->id,
-             $item->first_name, $item->middle_name, $item->last_name
+             $item->first_name,
+             $item->middle_name,
+             $item->last_name
              ) . PHP_EOL;
     }
 } catch (Exception $e) {
-    print_r($e->getMessage());
+    print_r($e->getMessage() . PHP_EOL);
 }
